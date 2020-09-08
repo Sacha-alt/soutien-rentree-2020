@@ -20,7 +20,7 @@ Orientée Objet du S2 de l'an dernier afin de consolider les connaissances acqui
 
 Comme il a été d'usage en TP, commencez par créer un fork du dépôt de ce TP. Pour ce faire, rendez-vous sur le lien suivant (TODO): 
 
-[https://classroom.github.com/a/sq3xlG3c](https://classroom.github.com/a/sq3xlG3c) 
+[https://classroom.github.com/a/1IYMeWTh](https://classroom.github.com/a/1IYMeWTh) 
 
 Rappelons que GitHub va vous créer un dépôt contenant un fork du dépôt 'IUTInfoAix-m2105/soutien-rentree-2020' et s'appellant 'IUTInfoAix-m2105/soutien-rentree-2020-votreUsername'. 
 
