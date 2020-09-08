@@ -69,6 +69,17 @@ que le message contenu dans l'exception.
 (Il n'est pas nécessaire de faire appel explicitement à sa méthode `toString()`. 
 Java s'en charge si l'instance apparaît là où un objet `String` est attendu).
 
+###### Classe `MatiereTest`
+
+Une autre manière de tester du code est d'écrire des classes de test.
+La classe `MatiereTest` est disponible dans l'arborescence de `src/test` et propose quelques tests sur la classe 
+`Matiere`.
+Vous pouvez les activer et les faire passer pour vérifier.
+Dans la suite, vous pourrez vous inspirer du code de cette classe pour réaliser vos propres classes de 
+test du code que vous écrirez.
+Dans le présent sujet, nous nous contenterons de faire évoluer la méthode `main()` ci-dessus afin de tester notre 
+application. 
+
 ###### Classe `Note`
 
 Écrire la classe `Note` qui contient une référence sur la matière concernée et un décimal qui représente la valeur de 
