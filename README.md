@@ -211,3 +211,10 @@ une méthode `main()` adéquate qui doit exploiter la classe `Analyseur` fournie
 + afficher la liste des 1001 points de la courbe de la fonction correspondante sur l'intervalle [ -0.5 ; 20 ] sous la forme `f(x) = y`
 + afficher les valeurs min et max de la fonction sur cet intervalle 
 
+#### Description de l'interface
+
+Les composants graphique formant la scene sont résumés dans la figure suivante :
+
+![](src/main/resources/assets/composants_interface.png)
+
+
