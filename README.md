@@ -255,6 +255,8 @@ Initialement, ils contiennent chacun une chaîne vide et le bouton `Tracer` doit
 
 Ces `TextField` seront modifiés si l'analyse de l'expression et des paramètres ne provoque pas d'erreur, et 
 contiendront les valeurs calculées par l'objet `CalculateurPointsFonction`.
+Pour fixer leur valeur, utiliser par exemple `String.format("%.2f", calculateurPoints.getYMin())` pour que le contenu
+soit bien visible dans le `TextFiled`.
 Dans ce cas, le bouton `Tracer` sera activé.
 
 Si l'analyse provoque une erreur, il est possible d'afficher une boîte de dialogue informant de l'erreur à l'aide 
