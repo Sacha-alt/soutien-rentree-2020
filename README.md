@@ -105,7 +105,7 @@ La doter de la méthode `ajouter()` qui ajoute une note dans le tableau de notes
 objets `Note` et les insère dans l'`ArrayList` (Rappel : la méthode s'applique à une instance de `TableauDeNotes` qui 
 **est aussi** un `ArrayList`).
 
-###### Classe `TableauDeNotes`
+###### Classe `Etudiant`
 
 Écrire la classe `Etudiant` qui contient un nom (chaîne de caractères) et un objet `TableauDeNotes`. 
 Proposer un constructeur à un argument (le nom).
