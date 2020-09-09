@@ -191,6 +191,23 @@ Modifier la méthode `main()` de façon à ce qu'elle gère cette exception et a
 Revenons sur le sujet de l'examen d'IHM que vous trouverez en suivant ce lien 
 [https://github.com/IUTInfoAix-M2105/TestIHM2020](https://github.com/IUTInfoAix-M2105/TestIHM2020).
 
-Nous allons écrire le code présentant l'interface suivante :
+Nous allons écrire le code présentant initialement l'interface suivante :
 
+![](src/main/resources/assets/fenetre_initiale.png)
+
+Puis, après analyse et demande de tracé, la fonction sera tracée comme suit :
+
+![](src/main/resources/assets/fonction_tracee.png)
+
+#### Première étape
+
+Avant de s'intéresser à ce que contient cette interface, il faut revenir sur l'usage des classes utilitaires et la 
+gestion des points de la courbe à tracer, que l'on obtient via l'objet `CalculateurPointsFonction`.
+
+Il vous est donc demandé, comme à l'examen, de rendre la classe `CalculateurPointsFonction` exécutable en y ajoutant 
+une méthode `main()` adéquate qui doit exploiter la classe `Analyseur` fournie afin :                                                   
++ d'analyser la chaîne `"exp(-x * 0.2) * sin(x)"`
++ afficher la chaîne produite par l'expression obtenue
++ afficher la liste des 1001 points de la courbe de la fonction correspondante sur l'intervalle [ -0.5 ; 20 ] sous la forme `f(x) = y`
++ afficher les valeurs min et max de la fonction sur cet intervalle 
 
