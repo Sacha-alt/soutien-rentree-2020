@@ -8,10 +8,10 @@
 * **Enseignants actuels:** [Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr), [Cyril Pain-Barre](mailto:cyril.pain-barre@univ-amu.fr)
 * **Besoin d'aide ?**
     * La page [Piazza de ce cours](https://piazza.com/univ-amu.fr/spring2017/m2105/home).
-    * Consulter et/ou créér des [issues](https://github.com/IUTInfoAix-M2105/tp1/issues).
-    * [Email](mailto:sebastien.nedjar@univ-amu.fr) pour une question d'ordre privée, ou pour convenir d'un rendez-vous physique.
+    * Consulter et/ou créér des [issues](https://github.com/IUTInfoAix-M2105/soutien-rentree-2020/issues).
+    * [Email](mailto:cyril.pain-barre@univ-amu.fr) pour une question d'ordre privée, ou pour convenir d'un rendez-vous physique.
 
-## Soutien Post Covid : une dernière couche de Java / IHM pour préparer l'hiver [![Build Status](https://travis-ci.org/IUTInfoAix-M2105/tp1.svg?branch=master)](https://travis-ci.org/IUTInfoAix-M2105/tp1)
+## Soutien Post Covid : une dernière couche de Java / IHM pour préparer l'hiver
 
 L'objectif de cette séance est de reprendre les notions clés de l'enseignement de Java / IHM et de la Programmation 
 Orientée Objet du S2 de l'an dernier afin de consolider les connaissances acquises durant le confinement.
