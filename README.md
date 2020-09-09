@@ -218,3 +218,77 @@ Les composants graphiques formant la scène sont résumés dans la figure suivan
 ![](src/main/resources/assets/composants_interface.png)
 
 
+#### La classe `TraceurDeFonction`
+
+C'est la classe principale qui représente la fenêtre.
+Elle doit donc étendre la classe `Application`.
+Certains composants graphiques et données membres ne serviront que localement, et d'autres devront pouvoir être 
+accessibles au panneau de tracé (classe `PanneauTrace`).
+
+Débuter l'écriture de cette classe par les déclarations suivantes :
+
+```java
+public class TraceurDeFonction ... {
+  static final String[] titresParametres = {"delta X", "X min", "X max", "delta Y", "Y min", "Y max" };
+  static final Font POLICE = Font.font("Monospaced", FontWeight.NORMAL, 12);
+
+  private double[] valeurParametres = {1, -0.5, +20, 0.2 };
+  private TextField[] champsParametres;
+  private TextField texteFonction;
+  private PanneauTrace panneauTrace;
+  private Button boutonTracer;
+  private CalculateurPointsFonction calculateurPoints;
+
+  ...
+}
+```
+
+Il faudra aussi doter de votre classe de différents accesseurs :
+- `getDeltaX()`, `getXmin()`, `getXmax()` et `getDeltaY()` qui retournent la valeur contenue dans le `TextField` 
+correspondant.
+- `getCalculateurPoints()` qui retourne le calculateur de points qui aura été créé lors de l'analyse de l'expression 
+et des paramètres utilisateurs ;
+
+Les `TextField` contenant *Ymin* et *Ymax* doivent avoir un fond grisé (utiliser la méthode 
+`setStyle("-fx-background-color: lightgrey")`) et sont non éditables.
+Initialement, ils contiennent chacun une chaîne vide et le bouton `Tracer` doit être désactivé.
+
+Ces `TextField` seront modifiés si l'analyse de l'expression et des paramètres ne provoque pas d'erreur, et 
+contiendront les valeurs calculées par l'objet `CalculateurPointsFonction`.
+Dans ce cas, le bouton `Tracer` sera activé.
+
+Si l'analyse provoque une erreur, il est possible d'afficher une boîte de dialogue informant de l'erreur à l'aide 
+d'un objet `Alert`.
+
+Compléter cette classe en déléguant le traitement des clics sur les boutons à des méthodes spécifiques.
+Par exemple, pour le bouton *Analyser*, utiliser une lambda, par exemple : `boutonAnalyser.setOnAction(event -> analyserParametres());`
+et définir la méthode `analyserParametres()`.
+
+#### La classe PanneauTrace
+
+Écrire la classe `PanneauTrace` qui étend `Pane`, et dont le constructeur :
+- prend en argument l'instance de `TraceurDeFonction` qui le contient ;
+- sauvegarde cet objet `TraceurDeFonction` dans une donnée membre privée ;
+- fixe un fond blanc à ce `Pane` ;
+- ainsi qu'une taille préférée de 400 x 280.
+
+Définir dans cette classe la méthode `redessiner()` suivante :
+
+```java
+  public void redessiner() {
+    getChildren().clear();
+    initParams();
+    calculCoeffTransformationsAffines();
+    tracerAxes();
+    tracerGrille();
+    tracerFonction();
+  }
+```
+
+qui sera appelée suite au clic sur le bouton *Tracer*.
+
+La méthode `initParams()`doit récupérer du TraceurDeFonction les éléments nécessaires au tracé et les sauvegarder 
+dans des données membres privées.
+
+Les autres méthodes devraient avoir un nom suffisamment parlant...
+
