@@ -213,7 +213,7 @@ une méthode `main()` adéquate qui doit exploiter la classe `Analyseur` fournie
 
 #### Description de l'interface
 
-Les composants graphique formant la scene sont résumés dans la figure suivante :
+Les composants graphiques formant la scène sont résumés dans la figure suivante :
 
 ![](src/main/resources/assets/composants_interface.png)
 
