@@ -186,4 +186,11 @@ Dans la classe `Main`, copier la méthode `main()` en `mainV2()` afin de la sauv
 Modifier la méthode `main()` de façon à ce qu'elle gère cette exception et affiche le message qu'elle véhicule.
 
 
-### A SUIVRE
+### Interface minimaliste du traceur de fonctions
+
+Revenons sur le sujet de l'examen d'IHM que vous trouverez en suivant ce lien 
+[https://github.com/IUTInfoAix-M2105/TestIHM2020](https://github.com/IUTInfoAix-M2105/TestIHM2020).
+
+Nous allons écrire le code présentant l'interface suivante :
+
+
