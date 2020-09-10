@@ -10,5 +10,9 @@ public class Main {
             System.out.println(exception.getMessage());
             return;
         }
+
+            Note uneNote = new Note (UneAutreMatiere,20)
+
+
     }
 }
