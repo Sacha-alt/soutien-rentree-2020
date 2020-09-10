@@ -71,7 +71,7 @@ Java s'en charge si l'instance apparaît là où un objet `String` est attendu).
 
 ###### Classe `Note`
 
-Écrire la classe `Note` qui contient une référence sur la matière concernée et un décimal qui représente la valeur de 
+Écrire la classe `Note` qui contient une référence (un objet) sur la matière concernée et un décimal qui représente la valeur de 
 la note.
 Ces données doivent être **privées**.
 Proposer un constructeur à 2 arguments pour cette classe.
@@ -91,8 +91,8 @@ Dans la méthode `main()` de `Main`, vérifier que l'on peut bien créer une not
 
 Une autre manière de tester du code est d'écrire des classes de test.
 La classe `MatiereTest` est disponible dans l'arborescence de `src/test` et propose quelques tests sur la classe 
-`Matiere`.
-Vous pouvez les activer et les faire passer pour vérifier.
+`Matiere`, dont certains sont commentés.
+Vous pouvez les activer/décommenter et les faire passer pour vérifier.
 Dans la suite, vous pourrez vous inspirer du code de cette classe pour réaliser vos propres classes de 
 test du code que vous écrirez.
 Dans le présent sujet, nous nous contenterons de faire évoluer la méthode `main()` ci-dessus afin de tester notre 
@@ -188,7 +188,7 @@ Modifier la méthode `main()` de façon à ce qu'elle gère cette exception et a
 
 ### Interface minimaliste du traceur de fonctions
 
-Revenons sur le sujet de l'examen d'IHM que vous trouverez en suivant ce lien 
+Revenons sur le sujet de l'examen d'IHM que vous trouverez pour consultation en suivant ce lien 
 [https://github.com/IUTInfoAix-M2105/TestIHM2020](https://github.com/IUTInfoAix-M2105/TestIHM2020).
 
 Nous allons écrire le code présentant initialement l'interface suivante :
@@ -198,6 +198,9 @@ Nous allons écrire le code présentant initialement l'interface suivante :
 Puis, après analyse et demande de tracé, la fonction sera tracée comme suit :
 
 ![](src/main/resources/assets/fonction_tracee.png)
+
+**Tout le code utilaires qui était donné dans l'examen est disponible dans le paquetage `fr.univ_amu.iut.exercice2` du présent sujet.
+Il est donc inutile de cloner/forker de nouveau le sujet d'examen !**
 
 #### Première étape
 
